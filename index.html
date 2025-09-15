@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance System</title>
+  <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  <div class="container">
+    
+    <h1>📋 Class Attendance</h1>
+
+    
+    <div class="input-group">
+      <div class="date-input">
+        <input id="date-input" type="date" placeholder="Enter the date">
+      </div>
+      <input id="class-input" type="text" placeholder="Class Name">
+    </div>
+
+
+    <div id="studentList"></div>
+
+    
+    <div class="results">
+      
+      <div class="card present">
+        <h2>✅ Present Students</h2>
+        <pre id="presentList"></pre>
+        <button onclick="copyText('presentList')" class="copy-btn-green">Copy Present List</button>
+      </div>
+
+      
+      <div class="card absent">
+        <h2>❌ Absent Students</h2>
+        <pre id="absentList"></pre>
+        <button onclick="copyText('absentList')" class="copy-btn-red">Copy Absent List</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  </body>
+  </html>
